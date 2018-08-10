@@ -29,5 +29,5 @@ app.get(
   })
 );
 
-const PORT = process.env.PORT || 5000;
-app.listen(PORT);
+const portnum = process.env.PORT || 5000;    
+app.listen(portnum);
