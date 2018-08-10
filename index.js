@@ -13,13 +13,20 @@ passport.use(
   new GoogleStrategy(
     {
       clientID: keys.googleClientID,
-      clientSecrete: keys.googleClientSecret,
+      clientSecret: keys.googleClientSecret,
       callbackURL: "/auth/google/callback"
     },
-    accesToken => {
-      console.log(accesToken);
+    accessToken => {
+      console.log(accessToken);
     }
   )
+);
+
+app.get(
+  "/auth/google",
+  passport.authenticate("google", {
+    scope: ["profile", "email"]
+  })
 );
 
 const PORT = process.env.PORT || 5000;
