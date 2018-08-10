@@ -29,7 +29,7 @@ app.get(
   })
 );
 
-const portnum = process.env.PORT || 5000;    
-app.listen(portnum);
+const PORT = process.env.PORT || 5000;    
+app.listen(PORT);
 
 //hknk
