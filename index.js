@@ -25,5 +25,5 @@ app.get("/", (req, res) => {
   res.send({ msg: "Hi Erica" });
 });
 require("./routes/authRoutes")(app);
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 app.listen(PORT);
