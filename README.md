@@ -6,12 +6,9 @@ Email App using Mongoose, Express, React, and Node with OAuth 2.0.
 
 ## Front End
 
-- Node
-- Express
-- Passport
-- Passport Google OAuth 2.0
-- NPM
-- Nodemon
+- Materialize CSS
+- React 
+- Redux
 
 ## Back End
 
