@@ -1,7 +1,7 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "",
+  "description": "Email App using Mongoose, Express, React, and Node with OAuth 2.0.",
   "main": "index.js",
   "engines": {
     "node": "8.1.1",
@@ -20,7 +20,16 @@
     "cookie-session": "^2.0.0-beta.3",
     "express": "^4.16.3",
     "mongoose": "^5.2.7",
+    "nodemon": "^1.18.3",
     "passport": "^0.4.0",
     "passport-google-oauth20": "^1.0.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elshack09/Email-App.git"
+  },
+  "bugs": {
+    "url": "https://github.com/elshack09/Email-App/issues"
+  },
+  "homepage": "https://github.com/elshack09/Email-App#readme"
 }
