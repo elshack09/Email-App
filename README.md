@@ -22,6 +22,6 @@ Email App using Mongoose, Express, React, and Node with OAuth 2.0.
 # Deployment
 
 ## Heroku
-
+Link to application deployed on Heroku. 
 https://shielded-meadow-38665.herokuapp.com/
 
