@@ -7,7 +7,7 @@ class Payments extends Component {
             <StripeCheckout
                 amount={500}
                 token={token => console.log(token)}
-                sripeKey={process.env.REACT_APP_STRIPE_KEY}
+                stripeKey={process.env.REACT_APP_STRIPE_KEY}
             />
 
         )
