@@ -12,8 +12,11 @@ import reducers from "./reducers";
 const store = createStore(reducers, {}, applyMiddleware(reduxThunk));
 
 ReactDOM.render(
-  <Provider store={store}>
+  <Provider store={store}> 
     <App />
   </Provider>,
   document.querySelector("#root")
 );
+
+console.log('Stripe key is', process.env.REACT_APP_STRIPE_KEY)
+console.log('Environment is', process.env.NODE_ENV)
