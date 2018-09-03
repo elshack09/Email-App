@@ -3,12 +3,16 @@ const mongoose = require("mongoose");
 const cookieSession = require("cookie-session");
 const passport = require("passport");
 const keys = require("./config/keys");
+const bodyParser = require('body-parser')
 require("./models/User");
 require("./services/passport");
+
 
 mongoose.connect(keys.mongoURI);
 
 const app = express();
+
+app.use(bodyParser.json())
 
 app.use(
   cookieSession({
@@ -24,7 +28,10 @@ app.use(passport.session());
 app.get("/", (req, res) => {
   res.send({ msg: "Hi Erica" });
 });
+
 require("./routes/authRoutes")(app);
+require("./routes/billingRoutes")(app)
+
 const PORT = process.env.PORT || 3001;
 app.listen(PORT);
 
