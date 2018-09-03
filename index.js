@@ -32,7 +32,7 @@ app.get("/", (req, res) => {
 require("./routes/authRoutes")(app);
 require("./routes/billingRoutes")(app)
 
-if (proccess.env.NODE_ENV === 'production') {
+if (process.env.NODE_ENV === 'production') {
   // Express will server up production assests
   // like main.js or main.css file
   app.use(expresss.static('client/build'))
