@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "create-react-app": "^1.5.2",
     "materialize-css": "^0.100.2",
     "npm": "^6.4.1",
     "react": "^16.4.2",
