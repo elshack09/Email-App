@@ -35,29 +35,3 @@ passport.use(
     }
   )
 );
-
-// passport.use(
-//   new GoogleStrategy(
-//     {
-//       clientID: keys.googleClientID,
-//       clientSecret: keys.googleClientSecret,
-//       callbackURL: "/auth/google/callback",
-//       proxy: true
-//     },
-//     (accessToken, refreshToken, profile, done) => {
-//       User.findOne({ googleId: profile.id }).then(existingUser => {
-//         if (existingUser) {
-//           // user already exits
-//           done(null, existingUser);
-//         } else {
-//           // create new user record
-//           new User({
-//             googleId: profile.id
-//           })
-//             .save()
-//             .then(user => done(null, user));
-//         }
-//       });
-//     }
-//   )
-// );
