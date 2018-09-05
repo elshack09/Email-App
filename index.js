@@ -26,7 +26,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 app.get("/", (req, res) => {
-  res.send({ msg: "Hi Erica" });
+ 
 });
 
 require("./routes/authRoutes")(app);
@@ -46,7 +46,3 @@ if (process.env.NODE_ENV === 'production') {
 const PORT = process.env.PORT || 3001;
 app.listen(PORT);
 
-
-//test committ 
-// test
-//test
