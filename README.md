@@ -17,6 +17,7 @@ Email App using Mongoose, Express, React, and Node with OAuth 2.0. Utilized Stri
 - Google OAuth 2.0
 - NPM
 - Nodemon
+- SendGrid: Emaill Delivery Service
 
 # Deployment
 
