@@ -9,7 +9,7 @@ class Mailer extends helper.Mail {
         this.from_email = new helper.Email('no-reply@emailapp.com')
         this.subject = subject
         this.body = new helper.Content('text/html', content)
-        this.recipients = this.formatAddressess(recipients)
+        this.recipients = this.formatAddresses(recipients)
 
     }
 }
